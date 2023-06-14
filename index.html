@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/5099b17d5e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <nav>Student Registration Form</nav>
+    <div class="container1 container">
+      <div class="form">
+        <label for="name">Name</label>
+        <input type="text" id="name" class="input" placeholder="Enter full name"/>
+        <br />
+        <label for="name">Email</label>
+        <input type="text" id="email" class="input" placeholder="Enter email" />
+        <br />
+        <label for="name">Phone</label>
+        <input type="text" id="phone" class="input" placeholder="Enter phone" />
+        <br />
+        <label for="name">Branch</label>
+        <input
+          type="text"
+          id="branch"
+          class="input"
+          placeholder="Enter branch"
+        />
+        <br />
+        <label for="name">Image link</label>
+        <input
+          type="text"
+          id="imgLink"
+          class="input"
+          placeholder="Enter Image link"
+        />
+        <br />
+
+        <label>Gender</label>
+        <div class="gender" id="gender">
+          <div>
+            <input type="radio" name="gender" id="male" />
+            <label for="male">Male</label>
+          </div>
+          <div>
+            <input type="radio" name="gender" id="female" />
+            <label for="female">Female</label>
+          </div>
+          <div>
+            <input type="radio" name="gender" id="other" />
+            <label for="other">Other</label>
+          </div>
+        </div>
+
+        <div class="btnContainer">
+          <button type="submit" id="register" onclick="submit()">Submit</button>
+          <button type="submit" id="clear">Clear</button>
+        </div>
+      </div>
+    </div>
+    <div class="container2 container" id="listContainer">
+      <div class="title">Registered Student List</div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
